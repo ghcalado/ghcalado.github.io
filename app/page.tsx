@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const featuredProjects = [
   {
     number: "P/01",
@@ -312,6 +314,22 @@ export default function Home() {
           <p>Sou estudante de Ciência da Computação na Afya Unima, em Maceió. Gosto de entender sistemas por inteiro: dos dados e algoritmos à experiência de quem usa. Meu trabalho combina arquitetura limpa, integridade de dados, automação e aprendizado contínuo.</p>
           <p>Já entreguei software para clientes reais, construí pipelines completos de machine learning e transformei documentação jurídica em uma experiência de consulta com IA.</p>
         </div>
+        <figure className="profile-portrait">
+          <div className="portrait-frame">
+            <Image
+              src={`${basePath}/ghabriel-calado.jpg`}
+              alt="Retrato profissional de Ghabriel Calado"
+              width={933}
+              height={1400}
+              sizes="(max-width: 920px) 100vw, 32vw"
+            />
+            <span aria-hidden="true">GC / 2026</span>
+          </div>
+          <figcaption>
+            <b>Ghabriel Calado</b>
+            <small>Backend & IA · Maceió, Brasil</small>
+          </figcaption>
+        </figure>
         <div className="profile-facts">
           <div><span>Formação</span><b>Ciência da Computação</b><small>Afya Unima · 2026–2030</small></div>
           <div><span>Base</span><b>Maceió, AL</b><small>Brasil · GMT−3</small></div>
