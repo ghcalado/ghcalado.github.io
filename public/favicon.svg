@@ -1,0 +1,5 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="b" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse"><stop stop-color="#2878F5"/><stop offset="1" stop-color="#064BC7"/></linearGradient></defs>
+  <rect width="64" height="64" rx="16" fill="url(#b)"/>
+  <text x="32" y="39" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="700">GC</text>
+</svg>
