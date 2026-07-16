@@ -1,11 +1,12 @@
 const featuredProjects = [
   {
     number: "P/01",
-    eyebrow: "EdTech · Produto próprio",
-    title: "Sou mais Walder Cursos",
+    eyebrow: "Computer vision · Sports tech",
+    title: "VisionVAR",
     description:
-      "Plataforma educacional com IA generativa e RAG para automatizar avaliações alinhadas a diretrizes nacionais, com guardrails e infraestrutura preparada para uso simultâneo.",
-    tags: ["IA generativa", "RAG", "Produto", "Cloud"],
+      "Protótipo semiautomático que analisa impedimentos em vídeos de futebol, calcula a referência visual do lance e exporta imagem e relatório JSON.",
+    tags: ["Python", "OpenCV", "NumPy", "Streamlit"],
+    href: "https://github.com/ghcalado/visionVAR_v1",
     accent: true,
   },
   {
@@ -72,20 +73,40 @@ const additionalProjects = [
 
 const skillGroups = [
   {
-    title: "Backend & Dados",
-    skills: ["Python 3", "Flask", "SQL", "SQLite", "APIs", "Arquitetura limpa"],
+    title: "Backend",
+    skills: ["Python", "Flask", "REST APIs", "Gunicorn", "PostgreSQL", "Supabase (Row Level Security)", "Password hash authentication"],
+  },
+  {
+    title: "AI / RAG",
+    skills: ["OpenAI API", "RAG architecture", "ChromaDB", "Embeddings", "Sentence Transformers", "Prompt Engineering", "LLM output validation", "Structured AI generation"],
   },
   {
     title: "Machine Learning",
-    skills: ["Scikit-learn", "Pandas", "NumPy", "SMOTE", "Streamlit", "Plotly"],
+    skills: ["Scikit-learn", "Pandas", "NumPy (algorithms from scratch)", "SMOTE", "Streamlit"],
   },
   {
     title: "Deep Learning",
-    skills: ["PyTorch", "ResNet-18", "Transfer learning", "Visão computacional"],
+    skills: ["PyTorch", "ResNet-18", "Transfer Learning", "Computer Vision"],
   },
   {
-    title: "LLM & IA",
-    skills: ["LangChain", "Groq", "LLaMA", "ChromaDB", "RAG", "Guardrails"],
+    title: "Data & Documents",
+    skills: ["PyMuPDF / pymupdf4llm", "python-docx", "ReportLab", "PDF / HTML generation", "Data Engineering"],
+  },
+  {
+    title: "Databases",
+    skills: ["SQLite3", "PostgreSQL", "Relational Modeling", "SQL Transactions", "Vector Databases"],
+  },
+  {
+    title: "Tools & Deployment",
+    skills: ["Git", "GitHub", "Render", "Railway", "Environment Variables (dotenv)"],
+  },
+  {
+    title: "Integrations",
+    skills: ["WhatsApp API", "AI / LLM APIs"],
+  },
+  {
+    title: "Best Practices",
+    skills: ["Clean Architecture", "DRY Principle", "Modular Design"],
   },
 ];
 
@@ -210,7 +231,7 @@ export default function Home() {
             );
 
             return project.href ? (
-              <a className="project-card" href={project.href} target="_blank" rel="noreferrer" key={project.title}>
+              <a className={`project-card ${project.accent ? "project-card-accent" : ""}`} href={project.href} target="_blank" rel="noreferrer" key={project.title}>
                 {content}
               </a>
             ) : (
@@ -248,10 +269,10 @@ export default function Home() {
           </div>
           <div className="timeline">
             <article>
-              <div className="timeline-meta"><span>2026 — atual</span><span>Projeto próprio</span></div>
-              <h3>Criador & Desenvolvedor Líder</h3>
+              <div className="timeline-meta"><span>2026 — atual</span><span>Cliente real</span></div>
+              <h3>Desenvolvedor Líder</h3>
               <h4>Sou mais Walder Cursos · EdTech de IA</h4>
-              <p>Desenhei uma plataforma escalável para geração de material didático inteligente, combinando produto, engenharia de prompt, RAG, guardrails e infraestrutura em nuvem.</p>
+              <p>Desenvolvi para um cliente real uma plataforma escalável de geração de material didático inteligente, combinando produto, engenharia de prompt, RAG, guardrails e infraestrutura em nuvem.</p>
             </article>
             <article>
               <div className="timeline-meta"><span>Abril 2026</span><span>Freelance</span></div>
