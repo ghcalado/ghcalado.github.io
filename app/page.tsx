@@ -324,9 +324,9 @@ export default function Home() {
         <p className="section-index">FORMAÇÃO CONTÍNUA</p>
         <h2 id="credentials-title">Certificações & repertório.</h2>
         <div className="credential-grid">
-          <article><span>01</span><div><h3>Python</h3><p>Santander Open Academy · 2026</p></div></article>
-          <article><span>02</span><div><h3>Oxe H4ck3r Conf3r3nc3</h3><p>Oxe Hacker Club · 2026</p></div></article>
-          <article><span>03</span><div><h3>English Course</h3><p>Wizard by Pearson · C1</p></div></article>
+          <article><span>01</span><div><h3>Agents and Workflows</h3><p>OpenAI · Julho de 2026</p></div></article>
+          <article><span>02</span><div><h3>Claude & Agent Skills</h3><p>Anthropic · 3 certificações · Julho de 2026</p></div></article>
+          <article><span>03</span><div><h3>Python</h3><p>Santander Open Academy · 2026</p></div></article>
         </div>
       </section>
 
