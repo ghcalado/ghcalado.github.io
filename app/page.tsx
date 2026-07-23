@@ -42,40 +42,36 @@ const additionalProjects = [
   {
     title: "Employee Churn Classifier",
     label: "Machine Learning",
-    metric: "92% de acurácia",
+    metric: "Scikit-learn · Streamlit",
     href: "https://github.com/ghcalado/churn-classifier",
   },
   {
     title: "Fortnite Event Pipeline",
     label: "Engenharia de dados",
-    metric: "Zero perda de eventos",
+    metric: "ETL · SQLite",
     href: "https://github.com/ghcalado/fortnite-event-pipeline",
   },
   {
     title: "Barbershop System",
-    label: "Produto em produção",
-    metric: "Cliente real",
+    label: "Sistema para cliente",
+    metric: "Python · SQLite",
     href: "https://github.com/ghcalado/barbershop-system",
   },
   {
     title: "PetShop Order Manager",
-    label: "Automação B2B",
-    metric: "WhatsApp API",
+    label: "Gestão de pedidos",
+    metric: "Python · SQLite",
     href: "https://github.com/ghcalado/petshop-order-manager",
   },
   {
     title: "Expense Splitter CLI",
-    label: "Arquitetura modular",
-    metric: "Transferências mínimas",
+    label: "Aplicação de linha de comando",
+    metric: "Python · CLI",
     href: "https://github.com/ghcalado/expense-splitter",
   },
 ];
 
 const skillGroups = [
-  {
-    title: "Backend",
-    skills: ["Python", "Flask", "REST APIs", "Gunicorn", "PostgreSQL", "Supabase (Row Level Security)", "Password hash authentication"],
-  },
   {
     title: "AI / RAG",
     skills: ["OpenAI API", "RAG architecture", "ChromaDB", "Embeddings", "Sentence Transformers", "Prompt Engineering", "LLM output validation", "Structured AI generation"],
@@ -89,24 +85,16 @@ const skillGroups = [
     skills: ["PyTorch", "ResNet-18", "Transfer Learning", "Computer Vision"],
   },
   {
-    title: "Data & Documents",
-    skills: ["PyMuPDF / pymupdf4llm", "python-docx", "ReportLab", "PDF / HTML generation", "Data Engineering"],
+    title: "Backend",
+    skills: ["Python", "Flask", "REST APIs", "PostgreSQL", "Supabase (Row Level Security)"],
   },
   {
-    title: "Databases",
-    skills: ["SQLite3", "PostgreSQL", "Relational Modeling", "SQL Transactions", "Vector Databases"],
+    title: "Data & Databases",
+    skills: ["Pandas", "SQLite3", "PostgreSQL", "Relational Modeling", "Vector Databases", "PyMuPDF / pymupdf4llm", "PDF / HTML generation"],
   },
   {
-    title: "Tools & Deployment",
+    title: "Tools",
     skills: ["Git", "GitHub", "Render", "Railway", "Environment Variables (dotenv)"],
-  },
-  {
-    title: "Integrations",
-    skills: ["WhatsApp API", "AI / LLM APIs"],
-  },
-  {
-    title: "Best Practices",
-    skills: ["Clean Architecture", "DRY Principle", "Modular Design"],
   },
 ];
 
@@ -152,10 +140,10 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow"><span /> Backend systems · Artificial intelligence</p>
           <h1>
-            Engenharia que transforma <strong>complexidade</strong> em produto.
+            Backend e IA aplicados a <strong>problemas reais.</strong>
           </h1>
           <p className="hero-intro">
-            Sou <b>Ghabriel Soares Calado Lins</b>, desenvolvedor backend & IA e estudante de Ciência da Computação. Projeto sistemas inteligentes, APIs e experiências digitais com foco em arquitetura, clareza e impacto real.
+            Sou <b>Ghabriel Soares Calado Lins</b>, desenvolvedor de IA & backend e estudante de Ciência da Computação. Desenvolvo APIs, aplicações de machine learning e sistemas com IA, com foco em soluções funcionais, código organizado e resultados verificáveis.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#projetos">
@@ -166,19 +154,19 @@ export default function Home() {
             </a>
           </div>
           <ul className="hero-signals" aria-label="Áreas de atuação">
-            <li>APIs robustas</li>
+            <li>Python & APIs</li>
             <li>Machine learning</li>
-            <li>Cloud ready</li>
+            <li>IA & RAG</li>
           </ul>
         </div>
 
-        <div className="system-visual" aria-label="Representação visual de um sistema em produção">
+        <div className="system-visual" aria-label="Representação visual de um fluxo de desenvolvimento">
           <div className="orb orb-one" />
           <div className="orb orb-two" />
           <div className="system-window">
             <div className="window-bar">
               <span className="window-dots"><i /><i /><i /></span>
-              <code>ghabriel.system / production</code>
+              <code>ghabriel.system / development</code>
             </div>
             <div className="code-block" aria-hidden="true">
               <p><em>~/portfolio</em> $ python build_impact.py</p>
@@ -186,7 +174,7 @@ export default function Home() {
               <p><small>02</small> &nbsp;&nbsp;stack = [<q>Python</q>, <q>Data</q>, <q>AI</q>]</p>
               <p><small>03</small> &nbsp;&nbsp;<b>def</b> deliver(self, challenge):</p>
               <p><small>04</small> &nbsp;&nbsp;&nbsp;&nbsp;<b>return</b> architecture.solve(challenge)</p>
-              <p className="code-comment"><small>05</small> # designed to scale</p>
+              <p className="code-comment"><small>05</small> # validate before shipping</p>
             </div>
             <div className="pipeline" aria-label="Fluxo: entender, construir e entregar">
               <div><b>01 · INPUT</b><span>problema</span></div>
@@ -194,8 +182,8 @@ export default function Home() {
               <div><b>03 · SHIP</b><span>impacto</span></div>
             </div>
             <dl className="system-status">
-              <div><dt>System</dt><dd>ONLINE</dd></div>
-              <div><dt>Focus</dt><dd>BACKEND</dd></div>
+              <div><dt>Status</dt><dd>ACTIVE</dd></div>
+              <div><dt>Focus</dt><dd>AI / ML</dd></div>
               <div><dt>Mode</dt><dd>BUILD</dd></div>
             </dl>
           </div>
@@ -206,9 +194,9 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <p className="section-index">01 / PROJETOS SELECIONADOS</p>
-            <h2>Sistemas em produção e experimentos de engenharia.</h2>
+            <h2>Machine learning, IA e visão computacional.</h2>
           </div>
-          <p>Uma seleção que conecta produto, inteligência artificial, arquitetura de software e pesquisa aplicada.</p>
+          <p>Projetos autorais com objetivos, métodos e tecnologias descritos nos respectivos repositórios.</p>
         </div>
 
         <div className="featured-grid">
@@ -265,14 +253,14 @@ export default function Home() {
           <div className="experience-intro">
             <p className="section-index section-index-light">02 / EXPERIÊNCIA</p>
             <h2>Do problema real ao sistema funcionando.</h2>
-            <p>Atuo no ciclo completo: descoberta, arquitetura, implementação, segurança, entrega e evolução.</p>
+            <p>Trabalho em levantamento de requisitos, implementação, validação e evolução de aplicações backend e IA.</p>
           </div>
           <div className="timeline">
             <article>
-              <div className="timeline-meta"><span>2026 — atual</span><span>Cliente real</span></div>
-              <h3>Desenvolvedor Líder</h3>
-              <h4>Sou mais Walder Cursos · EdTech de IA</h4>
-              <p>Desenvolvi para um cliente real uma plataforma escalável de geração de material didático inteligente, combinando produto, engenharia de prompt, RAG, guardrails e infraestrutura em nuvem.</p>
+              <div className="timeline-meta"><span>2026 — atual</span><span>Em desenvolvimento</span></div>
+              <h3>Desenvolvedor de IA & Backend</h3>
+              <h4>Sou Mais Walder Cursos · EdTech</h4>
+              <p>Ferramenta interna, desenvolvida sob contrato para o Sou Mais Walder Cursos, para gerar questões no estilo ENEM para professores e coordenação. O projeto está em desenvolvimento e reúne geração com IA, RAG, guardrails de validação e recuperação semântica com banco vetorial.</p>
             </article>
             <article>
               <div className="timeline-meta"><span>Abril 2026</span><span>Freelance</span></div>
@@ -308,15 +296,15 @@ export default function Home() {
       <section className="about section-shell" id="sobre">
         <div className="about-copy">
           <p className="section-index">04 / SOBRE</p>
-          <h2>Curiosidade técnica com responsabilidade de produto.</h2>
-          <p>Sou estudante de Ciência da Computação na Afya Unima, em Maceió. Gosto de entender sistemas por inteiro: dos dados e algoritmos à experiência de quem usa. Meu trabalho combina arquitetura limpa, integridade de dados, automação e aprendizado contínuo.</p>
-          <p>Já entreguei software para clientes reais, construí pipelines completos de machine learning e transformei documentação jurídica em uma experiência de consulta com IA.</p>
+          <h2>Backend, dados e IA com foco em implementação.</h2>
+          <p>Sou estudante de Ciência da Computação na Afya Unima, em Maceió. Desenvolvo projetos que vão da preparação de dados e treinamento de modelos à construção de APIs e interfaces de demonstração.</p>
+          <p>Minha experiência inclui software sob contrato, experimentos de machine learning, visão computacional e sistemas RAG para consulta de documentos.</p>
         </div>
         <div className="profile-facts">
           <div><span>Formação</span><b>Ciência da Computação</b><small>Afya Unima · 2026–2030</small></div>
           <div><span>Base</span><b>Maceió, AL</b><small>Brasil · GMT−3</small></div>
           <div><span>Idiomas</span><b>PT · EN · ES</b><small>Nativo · C1 · A2</small></div>
-          <div><span>Princípios</span><b>Clean · DRY · Modular</b><small>Clareza antes de complexidade</small></div>
+          <div><span>Foco técnico</span><b>ML · Visão · RAG</b><small>Backend aplicado a sistemas de IA</small></div>
         </div>
       </section>
 
@@ -334,7 +322,7 @@ export default function Home() {
         <div className="contact-inner">
           <p className="section-index section-index-light">05 / CONTATO</p>
           <h2>Vamos construir algo <span>relevante.</span></h2>
-          <p>Estou aberto a conversas sobre desenvolvimento backend, inteligência artificial, produtos digitais e oportunidades de aprendizado.</p>
+          <p>Estou aberto a conversas sobre desenvolvimento backend, machine learning, IA aplicada e oportunidades de aprendizado.</p>
           <div className="contact-links">
             <a href="mailto:ghabrielcalado@gmail.com">ghabrielcalado@gmail.com <Arrow /></a>
             <a href="https://github.com/ghcalado" target="_blank" rel="noreferrer">GitHub <Arrow /></a>
@@ -345,7 +333,7 @@ export default function Home() {
 
       <footer>
         <a className="brand" href="#inicio"><span className="brand-mark">GC</span><span>Ghabriel Calado</span></a>
-        <p>Backend · Inteligência Artificial · Produto</p>
+        <p>Backend · Machine Learning · IA</p>
         <p>© 2026 · Maceió, Brasil</p>
       </footer>
     </main>
