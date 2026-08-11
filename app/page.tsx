@@ -73,8 +73,12 @@ const additionalProjects = [
 
 const skillGroups = [
   {
-    title: "AI / RAG",
-    skills: ["OpenAI API", "RAG architecture", "ChromaDB", "Embeddings", "Sentence Transformers", "Prompt Engineering", "LLM output validation", "Structured AI generation"],
+    title: "Backend",
+    skills: ["Python", "FastAPI", "Flask", "REST APIs", "Gunicorn", "PostgreSQL", "Supabase (Row Level Security + RPC)", "Atomic rate limiting (PL/pgSQL)"],
+  },
+  {
+    title: "AI / RAG · Agentic",
+    skills: ["LangGraph (StateGraph)", "Adversarial self-critique", "RAG architecture", "ChromaDB", "HuggingFace Embeddings", "Groq Cloud (LLaMA)", "Prompt Engineering", "Structured JSON generation", "Multimodal OCR"],
   },
   {
     title: "Machine Learning",
