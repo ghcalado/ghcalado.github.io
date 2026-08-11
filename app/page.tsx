@@ -1,12 +1,12 @@
 const featuredProjects = [
   {
     number: "P/01",
-    eyebrow: "Computer vision · Sports tech",
-    title: "VisionVAR",
+    eyebrow: "EdTech AI · RAG · Agentic",
+    title: "Reda1000",
     description:
-      "Protótipo semiautomático que analisa impedimentos em vídeos de futebol, calcula a referência visual do lance e exporta imagem e relatório JSON.",
-    tags: ["Python", "OpenCV", "NumPy", "Streamlit"],
-    href: "https://github.com/ghcalado/visionVAR_v1",
+      "Motor de correção de redações do ENEM com pipeline agentic de dois nós (LangGraph): um agente avalia, um segundo faz autocrítica adversarial antes de entregar o resultado. RAG sobre critérios oficiais do INEP, OCR multimodal para redações manuscritas e rate limiting atômico via PostgreSQL RPC.",
+    tags: ["Python", "FastAPI", "LangGraph", "Groq", "ChromaDB", "Supabase", "Docker"],
+    href: "https://github.com/ghcalado/reda1000_v1",
     accent: true,
   },
   {
