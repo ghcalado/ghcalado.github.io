@@ -97,8 +97,16 @@ const skillGroups = [
     skills: ["Pandas", "SQLite3", "PostgreSQL", "Relational Modeling", "Vector Databases", "PyMuPDF / pymupdf4llm", "PDF / HTML generation"],
   },
   {
-    title: "Tools",
-    skills: ["Git", "GitHub", "Render", "Railway", "Environment Variables (dotenv)"],
+    title: "Tools & Deployment",
+    skills: ["Docker", "Docker Compose", "GitHub Actions (CI/CD)", "Pytest", "Git", "Render", "Railway", "Environment Variables (dotenv)"],
+  },
+  {
+    title: "Integrations",
+    skills: ["WhatsApp API", "AI / LLM APIs", "Supabase JS SDK"],
+  },
+  {
+    title: "Best Practices",
+    skills: ["Clean Architecture", "DRY Principle", "Modular Design", "Security-first (RLS, JWT, sanitização)"],
   },
 ];
 
