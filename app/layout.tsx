@@ -4,9 +4,7 @@ import "./globals.css";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata: Metadata = {
-  title: "Ghabriel Calado — Backend & Inteligência Artificial",
-  description:
-    "Portfólio de Ghabriel Calado: desenvolvimento backend, inteligência artificial, machine learning e produtos digitais.",
+  metadataBase: new URL("https://ghcalado.github.io"),
   keywords: [
     "Ghabriel Calado",
     "Desenvolvedor Backend",
@@ -19,14 +17,15 @@ export const metadata: Metadata = {
   authors: [{ name: "Ghabriel Soares Calado Lins" }],
   creator: "Ghabriel Calado",
   openGraph: {
-    title: "Ghabriel Calado — Backend & IA",
-    description: "Engenharia que transforma complexidade em produto.",
+    title: "Ghabriel Calado — IA aplicada & Backend",
+    description: "Código que pensa. Produto que funciona.",
     type: "website",
     locale: "pt_BR",
+    images: [{ url: `${basePath}/avatar-ghabriel.jpeg`, width: 1254, height: 1254, alt: "Avatar de Ghabriel Calado" }],
   },
   icons: {
-    icon: `${basePath}/favicon.svg`,
-    shortcut: `${basePath}/favicon.svg`,
+    icon: `${basePath}/avatar-ghabriel.jpeg`,
+    shortcut: `${basePath}/avatar-ghabriel.jpeg`,
   },
 };
 
